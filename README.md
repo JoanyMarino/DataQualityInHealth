@@ -7,7 +7,7 @@ version: 2022-03-11
 
 <div>
 
-**Work in Progress**
+_**Work in Progress**_: Please see [Proposal_0Instructions.md](Proposal_0Instructions.md).
 
 The assessment of data quality in observational health studies has received increasing attention over the past years, 
 and a range of tools has been developed to facilitate data quality assessments in R. 
@@ -24,16 +24,20 @@ If you have an issue with one of the packages discussed below, please contact
 the maintainer of that package. 
 
 
-### Core tools for data quality assessments
+### Packages 
 
--   `r pkg("dataquieR", priority = "core")`: dataquieR is designed to conduct data quality assessments in data collections for research. 
-     It makes strong use of metadata (e.g. collected in spreadsheets) and checks the formal compliance of study data with expectations defined in the metadata. 
-     The data quality assessments cover the dimensions completeness, consistency, and accuracy, as proposed by the framework of Schmidt et al. (2020). 
-     For technical details see Richter et al. (2021).
-     
-### Tools that assisst data quality assessments
+Old classification:
 
-### Tools that provide a GUI for non-programmers
+1. Core tools for data quality assessments
+2. Tools that assist in data quality assessments
+3. Tools that provide a GUI for non-programmers
+
+New classification (maybe in reverse order?):
+
+1. Packages that focus on descriptive overviews and on data exploration.
+2. Packages that require an input of rules to perform a series of highly focused checks.
+3. Packages that combine a broad range of descriptive features with the possibility to perform targeted checks.
+
 
 </div>
 
