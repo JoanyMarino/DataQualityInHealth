@@ -1,12 +1,13 @@
 ## CRAN Task View: DataQualityInHealth
 
----
-name: DataQualityInHealth
-topic: Data Quality Assessments in the Health Sciences
-maintainer: Joany MariÃ±o, Elisa Kasbohm, Stephan Struckmann, ...
+--------------- ------------------------   
+maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, ...
 email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, ...
-version: 2022-01-27
----
+version: 2022-03-11
+
+<div>
+
+**Work in Progress**
 
 The assessment of data quality in observational health studies has received increasing attention over the past years, 
 and a range of tools has been developed to facilitate data quality assessments in R. 
@@ -33,6 +34,8 @@ the maintainer of that package.
 ### Tools that assisst data quality assessments
 
 ### Tools that provide a GUI for non-programmers
+
+</div>
 
 
 ### Links
