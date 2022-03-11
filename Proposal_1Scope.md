@@ -16,3 +16,4 @@ data completeness, data consistency and data accuracy (@schmidt2021).
 
 - [ ] Add inclusion and exclusion criteria.
 - [ ] Explain the necessity of a narrow scope for this task view.
+- [ ] Rewrite according to the structure of the list of packages.

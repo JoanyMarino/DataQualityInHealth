@@ -15,3 +15,36 @@ The packages in this view can be roughly structured into the following topics.
 If you think that some package is missing from the list, please file an issue in the GitHub repository or contact the maintainers.
 
 ### 2. Rule-based input to perform highly focused checks
+
+These packages follows the idea of a rule-based
+checking, similar to software unit-testing-functions. 
+
+#### Check and report rule violations
+
+-   `r pkg("dataReporter")` can report issues and descriptive overviews in different formats (R
+Markdown, PDF, HTML and MS-Word). 
+
+-   `r pkg("IPDFileCheck")`
+
+-   `r pkg("sanityTracker")`
+
+
+#### Possibility of integration in test-frameworks
+
+These packages run a set of tests and summarise their results:
+
+-   `r pkg("testthat")`
+
+-   `r pkg("assertive")`: provides a large number of check functions,
+among them checks for specific string patterns (email addresses, ISBN
+codes, US zip codes, etc.). 
+
+-   `r pkg("assertr")`
+
+-   `r pkg("observer")`
+
+-   `r pkg("validate")` implements the Hiridoglu-Berthelot function to be used to detect outliers with skewed
+distributions ; with the add-on packages `r pkg("errorlocate")` and `r pkg("lumberjack")`, `r pkg("validate")` can also be used for traceable data curation.
+
+The packages `r pkg("observer")` and `r pkg("validate")` even comprise notification management
+functions.

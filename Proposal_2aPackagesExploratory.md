@@ -16,12 +16,37 @@ If you think that some package is missing from the list, please file an issue in
   
 ### 1. Descriptive overviews and data exploration
   
-* GUI-based: ExPanDaR includes exporting reports as R Markdown Notebooks, while explore generates HTML reports. Both packages include additional features for statistical inference, such as regression analysis and decision trees,
+#### GUI-based 
 
-* dlookr stands out for incorporating two different types of reports with detailed information on DQ issues and exploratory data analysis, respectively, in the form of PDF or HTML files. In contrast, {summarytools} generates a brief, but concise HTML report, which can be triggered by a single command call. The latter applies also to {DataExplorer}, but this package produces a more comprehensive report than {summarytools} including a wider range of figures, such as for example correlation heat maps. Another package which includes a report is {SmartEDA}. The report of this package is similar to {DataExplorer}'s report, but includes pairwise scatter plots for all pairs of variables instead of a correlation heat map. Also, the data overview is more extensive compared to {DataExplorer}. A principal component analysis is included in the report produced by {DataExplorer
+-   `r pkg("ExPanDaR")` includes exporting reports as R Markdown Notebooks, while `r pkg("explore")` generates HTML reports. Both packages include additional features for statistical inference, such as regression analysis and decision trees.
 
-*  The packages {clickR}, {mStats}, {skimr}, {StatMeasures} and {xray} are examples for packages that mainly give a descriptive variable overview but do not include stand-alone reports. 
+-   `r pkg("discoveR")`
 
-*  visdat follows a unique approach by providing mainly graphical output. While the package \texttt{inspectdf} also equips each of its functions with a matching plot, it differs from \texttt{visdat} in providing the output in a tabular format. Both packages are able to compare two data sets, but \texttt{inspectdf} offers more functionalities in this regard.
-  
+#### Focus on reporting
+
+-  `r pkg("dlookr")` stands out for incorporating two different types of reports with detailed information on DQ issues and exploratory data analysis, respectively, in the form of PDF or HTML files. 
+
+-   `r pkg("summarytools")` generates a brief, but concise HTML report, which can be triggered by a single command call. 
+
+- `r pkg("DataExplorer")` produces a more comprehensive report from a single function, including a wider range of figures, such as correlation heat maps. Also provides a principal component analysis.
+
+- `r pkg("SmartEDA")` produces a report similar to `r pkg("DataExplorer")`, but includes pairwise scatter plots for all pairs of variables instead of a correlation heat map. Also, the data overview is more extensive compared to `r pkg("DataExplorer")`.
+
+#### Descriptive overview without stand-alone reports
+
+These packages mainly give a descriptive variable overview
+
+-  `r pkg("clickR")`
+
+-  `r pkg("mStats")`
+
+-  `r pkg("skimr")` 
+
+-  `r pkg("StatMeasures")` 
+
+-  `r pkg("xray")` 
+
+#### Focus on visualization
+
+-  `r pkg("visdat")` follows a unique approach by providing mainly graphical output. While the package `r pkg("inspectdf")` also equips each of its functions with a matching plot, it differs from `r pkg("visdat")` in providing the output in a tabular format. Both packages are able to compare two data sets, but `r pkg("inspectdf")` offers more functionalities in this regard.
   

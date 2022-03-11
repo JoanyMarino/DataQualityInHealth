@@ -15,3 +15,37 @@ The packages in this view can be roughly structured into the following topics.
 If you think that some package is missing from the list, please file an issue in the GitHub repository or contact the maintainers.
 
 ### 3. Descriptive features with the possibility of performing targeted checks
+     
+This section includes R packages that combine a wide range of
+descriptive features as well as the possibility to perform targeted
+checks. They focus on DQA and can be applied also by users with limited
+programming knowledge. These packages also generate report documents
+that allow for rating DQ issues. 
+
+#### Core packages
+
+-   `r pkg("dataquieR", priority = "core")` is designed to conduct data quality assessments in data collections for research. 
+     It makes strong use of metadata (e.g. collected in spreadsheets) and checks the formal compliance of study data with expectations defined in the metadata. 
+     The data quality assessments cover the dimensions completeness, consistency, and accuracy, as proposed by the framework of Schmidt et al. (2020). 
+     For technical details see Richter et al. (2021).
+     
+-   `r pkg("DQAstats", priority = "core")`
+
+-   `r pkg("pointblank", priority = "core")`
+
+
+#### Other relevant packages
+
+-   `r pkg("DescTools")` generates descriptive reports, but also
+provides functions with statistical tests for specific accuracy issues.
+Despite its broad scope, the automatic reports are descriptive only, and
+DQ specific applications require programming R code.
+
+-   `r pkg("MOQA")` produces reports with a separate PDF file for
+for each variable, which may result in many files when
+analysing large data sets. For `r pkg("MOQA")`, only one general threshold for
+numerical variables can be used to define missing codes, i.e. all values
+in any variable above that threshold are treated as missing values in
+the same way while the package completely ignores NA values. If
+inadmissible categorical values exist in the data, `r pkg("MOQA")` crashes with
+an R error message, and cannot handle datetime variables.
