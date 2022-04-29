@@ -1,4 +1,4 @@
-## Proposal section 2a: Tentative List of Packages (exploratory)
+## Proposal section 2b: Tentative List of Packages (exploratory)
 
 **Requirement**: Include a _tentative list_ of packages for the task view. This should encompass the "core" packages
   and a collection of relevant packages, ideally grouped by sections within the topic. It is not important, yet,
