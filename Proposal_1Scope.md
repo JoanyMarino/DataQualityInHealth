@@ -4,27 +4,27 @@
   as well as relevant sections within the topic.
   *A task view should be on a topic with a rather clear scope that should neither be too narrow nor too wide.*
   
-*DataQualityInHealth* contains packages that help assessing the fitness for use / data quality 
-of medical data. 
+*DataQualityInHealth* contains packages that help assessing the data quality of health data. These quality checks inspect the integrity, completeness, consistency and accuracy of the data, which is an essential step within initial data analysis to ensure valid results. They can also be part of a monitoring process, e.g., to ensure consistent assessments in a long-term cohort study.
 
-The Package list is divided in two major sections: Packages that address
-R programmers, and packages that also address users with limited programming skills.
-Also, there are sections related to sub-tasks of data quality assessments, i.e. to data integrity,
-data completeness, data consistency and data accuracy (@schmidt2021).
+The Package list is divided in three major sections: 
+
+  - Packages that explicitly focus on data quality assessments and combine targeted data quality checks with descriptive or explorative features, 
+  - packages that focus on data exploration and statistical analyses, but provide data quality-related functions, and
+  - packages that perform focused data quality checks based on an input of rules.
 
 The applicability of packages also depends on the structure of data and 
 metadata. Because data quality is an issue in many different fields of science,
 hence for a broad variety of data types and metadata formats, this task
-view focuses data quality assessment tools specifically for medical data.  
+view focuses data quality assessment tools specifically for health data.  
 
-Packages are listed, if they
+We include packages, if they
+  - fall into one of the three categories mentioned above,
+  - are applicable to health data in variable formats,
+  - provide a sufficient number of data quality checks.
+  
+For the latter, we compared packages in reference to a data quality framework for observational health research data (@schmidt2021). As a threshold for inclusion, the packages need to address at least three data quality dimensions and four domains of the reference framework.
 
-  - explicitly refer to data quality
-  - are applicable to data in wide format
-  - address at least two data quality dimensions / XXX domains (@schmidt2021, 
-    XXX_ maybe, we should list also the other large DQ frameworks, i.e. Kahn, 
-    ...)
-  - provide functions that run without errors on example data
+Packages are excluded, if they can not be run as expected or produce major errors on example data.
 
 **To do**: 
 
