@@ -7,7 +7,8 @@
 Data quality informs about the degree to which data fulfils defined requirements. Evaluating data quality is essential in initial data analysis and monitoring processes,
 ensuring valid research results and consistent assessments in long-term studies. Assessing data quality is an issue across many scientific fields, including various data 
 types and metadata formats. Base R already contains general functionality to evaluate data quality broadly, but the structure of the data and metadata will determine the 
-applicability of more specialized packages. This task view documents packages for data quality assessment specifically for health-related data. The quality checks
+applicability of more specialized packages. Hence, data quality analysis may be spread across packages depending on the application. 
+This task view documents packages for data quality assessment specifically for health-related data from a methodological perspective. The quality checks
 performed by these packages include inspecting the data's integrity, completeness, consistency, and accuracy. 
 
 The packages are broadly divided according to their capabilities in three major groups:
