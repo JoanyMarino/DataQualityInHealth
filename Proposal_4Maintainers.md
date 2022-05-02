@@ -4,7 +4,8 @@
   Furthermore, task views should have teams of additional 1-5 co-maintainers and possible candidates for these can be listed
   as well in the proposal.
 
-The primary co-maintainers are Elisa Kasbohm (@ekasb), Stephan Struckmann (@struckma), and Joany Mariño (@JoanyMarino). Co-maintainers include: ...
+The primary co-maintainers are Elisa Kasbohm (@ekasb), Stephan Struckmann (@struckma), and Joany MariÃ±o (@JoanyMarino). Co-maintainers include: Lorenz Kapsner (@kapsner) and ...
+
 
 **To do**: 
 
