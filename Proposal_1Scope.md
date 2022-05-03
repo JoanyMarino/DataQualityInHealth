@@ -19,3 +19,13 @@ framework for observational health research data
 [(Schmidt et al. 2021)](https://doi.org/10.1186/s12874-021-01252-7). As a threshold for inclusion, the packages need to address at least three data quality dimensions and
 four domains of the reference framework. Packages that do not run as expected or produce major errors when applied to evaluate 
 [publicly available data sets](https://dataquality.ship-med.uni-greifswald.de/ExampleDataDescription.html) are not included.
+
+The packages listed in this task view are undergoing rapid development, and new ones are being continuously released.
+To keep the list up-to-date, we welcome and acknowledge suggestions for additions or improvements. 
+To do so, please send your comments in GitHub by
+[submitting an issue](https://github.com/cran-task-views/DataQualityHealth/issues),
+or make some edits and
+[submit a pull request](https://github.com/cran-task-views/pulls).
+If you can't contribute on GitHub, please send an email to the mantainers listed above. 
+If you have an issue with one of the packages discussed below, please contact
+the maintainer of that package. 
