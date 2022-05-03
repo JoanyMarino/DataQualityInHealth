@@ -1,50 +1,49 @@
 ## CRAN Task View: DataQualityInHealth
 
 --------------- ------------------------   
-maintainers: Joany Mari�o, Elisa Kasbohm, Stephan Struckmann, ...  
-email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, ...  
+maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, Lorenz Kapsner, ...  
+email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, Lorenz.Kapsner@uk-erlangen.de, ...  
 version: 2022-03-11  
 
 <div>
 
 _**Work in Progress**_: Please see [Proposal_0Instructions.md](Proposal_0Instructions.md).
 
-The assessment of data quality in observational health studies has received increasing attention over the past years, 
-and a range of tools has been developed to facilitate data quality assessments in R. 
-This task view contains information about packages relevant to assuring data quality in the health sciences. 
+### Scope 
 
-The packages listed in this task view are undergoing rapid development, and new ones are being continuously released.
-To keep the list up-to-date, we welcome and acknowledge suggestions for additions or improvements. 
-To do so, please send your comments in GitHub by
-[submitting an issue](https://github.com/cran-task-views/DataQualityHealth/issues),
-or make some edits and
-[submit a pull request](https://github.com/cran-task-views/pulls).
-If you can't contribute on GitHub, please send an email to the mantainers listed above. 
-If you have an issue with one of the packages discussed below, please contact
-the maintainer of that package. 
-
-
+...
+  
 ### Packages 
 
-Old classification:
+Please see https://github.com/JoanyMarino/DataQualityInHealth for the list of packages and preview of the Task View. 
+Currently, it consists of X packages (including Y core packages).  
 
-1. Core tools for data quality assessments
-2. Tools that assist in data quality assessments
-3. Tools that provide a GUI for non-programmers
+  
+### Overlap 
 
-New classification (maybe in reverse order?):
+...
+  
+### Maintainers 
 
-1. Packages that focus on descriptive overviews and on data exploration.
-2. Packages that require an input of rules to perform a series of highly focused checks.
-3. Packages that combine a broad range of descriptive features with the possibility to perform targeted checks.
-
+... 
 
 </div>
 
 
 ### Links
-- [Journal of Statistical Software: Econometrics in R](https://www.jstatsoft.org/v27/)
-- [The Title of a Relevant Homepage](http://path/to/homepage/)
+- [Data Quality Assessment](https://dataquality.ship-med.uni-greifswald.de/dqassess.html)
+- [Medical Informatics Initiative](https://www.medizininformatik-initiative.de/index.php/de)
+- [MIRACUM (Medical Informatics in Research and Care in University Medicine)](https://www.miracum.org/en/)
+
+### References 
+- Mariño J, Kasbohm E, Struckmann S, Kapsner LA, Schmidt CO. [R Packages for Data Quality Assessments and Data Monitoring: A Software Scoping Review with Recommendations for Future Developments](https://www.mdpi.com/2076-3417/12/9/4238). Applied Sciences. 2022 Jan;12(9):4238.
+- Kapsner LA, Mang JM, Mate S, Seuchter SA, Vengadeswaran A, Bathelt F, Deppenwiese N, Kadioglu D, Kraska D, Prokosch HU. [Linking a Consortium-Wide Data Quality Assessment Tool with the MIRACUM Metadata Repository](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). Applied Clinical Informatics. 2021 Aug;12(04):826-35.
+- Schmidt CO, Struckmann S, Enzenbach C, Reineke A, Stausberg J, Damerow S, Huebner M, Schmidt B, Sauerbrei W, Richter A. [Facilitating harmonized data quality assessments. A data quality framework for observational health research data collections with software implementations in R](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01252-7). BMC Medical Research Methodology. 2021 Dec;21(1):1-5.
+- Weiskopf NG, Bakken S, Hripcsak G, Weng C. [A data quality assessment guideline for electronic health record data reuse](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5983018/). Egems. 2017;5(1).
+- Liaw ST, Guo JG, Ansari S, Jonnagaddala J, Godinho MA, Borelli Jr AJ, de Lusignan S, Capurro D, Liyanage H, Bhattal N, Bennett V. [Quality assessment of real-world data repositories across the data life cycle: A literature review](https://www.ncbi.nlm.nih.gov/pmc/articles/pmc8475229/). Journal of the American Medical Informatics Association. 2021 Jul;28(7):1591-9.
+- Lee K, Weiskopf N, Pathak J. [A framework for data quality assessment in clinical research datasets](https://www.ncbi.nlm.nih.gov/pmc/articles/pmc5977591/). InAMIA Annual Symposium Proceedings 2017 (Vol. 2017, p. 1080). American Medical Informatics Association.
+- Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, Estiri H, Goerg C, Holve E, Johnson SG, Liaw ST. [A harmonized data quality assessment terminology and framework for the secondary use of electronic health record data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/). Egems. 2016;4(1).
+- Nonnemacher M, Nasseh D, Stausberg J. [Datenqualität in der medizinischen Forschung: Leitlinie zum adaptiven Management von Datenqualität in Kohortenstudien und Registern](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1). MWV Medizinisch Wissenschaftliche Verlagsgesellschaft; 2014.
 
 
 ### Contributions
