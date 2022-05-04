@@ -16,35 +16,26 @@ If you think that some package is missing from the list, please file an issue in
 
 ### 2. Rule-based input to perform highly focused checks
 
-These packages follows the idea of a rule-based
-checking, similar to software unit-testing-functions. 
-
-#### Check and report rule violations
-
--   `r pkg("dataReporter")` can report issues and descriptive overviews in different formats (R
-Markdown, PDF, HTML and MS-Word). 
-
--   `r pkg("IPDFileCheck")`
-
--   `r pkg("sanityTracker")`
-
+These packages follow the idea of a rule-based checking, similar to software 
+unit-testing-functions as in `r pkg(testthat)`. 
 
 #### Possibility of integration in test-frameworks
 
 These packages run a set of tests and summarise their results:
 
--   `r pkg("testthat")`
+-   `r pkg("validate")` can also be used for traceable data curation with the add-on packages `r pkg("errorlocate")` and `r pkg("lumberjack")`. It also comprises notification management functions. It supports a simplified R-alike syntax as well as [SDMX](https://sdmx.org/) REST-web service URLs for importing data quality rules.
 
--   `r pkg("assertive")`: provides a large number of check functions,
-among them checks for specific string patterns (email addresses, ISBN
-codes, US zip codes, etc.). 
+-   `r pkg("testdat")` integrates well with `r pkg(testthat)`, because it comprises functions that can be used in a unit test to test data for integrity, completeness and consistency issues.
 
--   `r pkg("assertr")`
+-   `r pkg("assertr")` supports a pipeline-alike coding style for writing tests. It addresses mostly integrity and consistency issues.
 
--   `r pkg("observer")`
+-   `r pkg("assertive")`: provides a large number of check functions, among them checks for specific string patterns (email addresses, ISBN
+                          codes, US zip codes, etc.).
 
--   `r pkg("validate")` implements the Hiridoglu-Berthelot function to be used to detect outliers with skewed
-distributions ; with the add-on packages `r pkg("errorlocate")` and `r pkg("lumberjack")`, `r pkg("validate")` can also be used for traceable data curation.
+-   `r pkg("assertable")` Simple, flexible, assertions on data.frame or data.table objects. It addresses mostly the data integrity.
 
-The packages `r pkg("observer")` and `r pkg("validate")` even comprise notification management
-functions.
+#### Check and report rule violations
+
+-   `r pkg("IPDFileCheck")` checks for availability of data and validates individual data values based on variable specific rules, e.g., if any value for a variable is in a list of admissible categories.
+
+-   `r pkg("sanityTracker")` checks a rule set and reports the samples for that a rule fails. Can generate a summary data frame on failed checks.
