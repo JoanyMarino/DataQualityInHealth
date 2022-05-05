@@ -24,4 +24,4 @@ We include here R packages that perform targeted data quality checks, but also p
 
 #### Other relevant packages
 
--   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines by [Nonnemacher et al. (2014)]((https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
+-   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines by [Nonnemacher et al. (2014)](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
