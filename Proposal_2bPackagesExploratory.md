@@ -15,38 +15,45 @@ The packages in this view can be roughly structured into the following topics.
 If you think that some package is missing from the list, please file an issue in the GitHub repository or contact the maintainers.
   
 ### 1. Descriptive overviews and data exploration
-  
+
+#### Including reporting features
+
+-  `r pkg("dlookr", priority = "core")` provides two different types of reports: one with detailed information on data quality issues (including missing values, outliers, cardinality, zeros and negative values) and one for exploratory data analysis (including a dataset overview, descriptive statistics with some data quality checks, normality tests and correlation analyses). 
+
+-  `r pkg("DataExplorer")` produces a comprehensive report from a single function, including a dataset overview and a number of figures (for missing values, univariate distributions and correlations). The report also provides a principal component analysis.
+
+-  `r pkg("SmartEDA")` produces a report similar to `r pkg("DataExplorer")`, but includes pairwise scatter plots for all pairs of variables and does not include a correlation heat map. The dataset overview is more extensive compared to `r pkg("DataExplorer")`.
+
+-  `r pkg("summarytools")` generates a brief, but concise HTML report, which can be triggered by a single command call. 
+
+
 #### GUI-based 
 
--   `r pkg("ExPanDaR")` includes exporting reports as R Markdown Notebooks, while `r pkg("explore")` generates HTML reports. Both packages include additional features for statistical inference, such as regression analysis and decision trees.
+-  `r pkg("ExPanDaR")` provides a Shiny application for data exploration and analysis, from which R Notebook code can be exported for documentation and reproduction. The application includes various univariate and bivariate plots, descriptive statistics, correlation analysis and regression analyses. 
 
--   `r pkg("discoveR")`
-
-#### Focus on reporting
-
--  `r pkg("dlookr")` stands out for incorporating two different types of reports with detailed information on DQ issues and exploratory data analysis, respectively, in the form of PDF or HTML files. 
-
--   `r pkg("summarytools")` generates a brief, but concise HTML report, which can be triggered by a single command call. 
-
-- `r pkg("DataExplorer")` produces a more comprehensive report from a single function, including a wider range of figures, such as correlation heat maps. Also provides a principal component analysis.
-
-- `r pkg("SmartEDA")` produces a report similar to `r pkg("DataExplorer")`, but includes pairwise scatter plots for all pairs of variables instead of a correlation heat map. Also, the data overview is more extensive compared to `r pkg("DataExplorer")`.
+- `r pkg("explore")` provides a Shiny application for data exploration (including a dataset overview, descriptive statistics, univariate and bivariate plots and decision trees) and can generate descriptive reports for the complete dataset or single variables. 
 
 #### Descriptive overview without stand-alone reports
 
-These packages mainly give a descriptive variable overview
+-  `r pkg("clickR")` provides descriptive statistics for each variable, grouped by data type. The package provides a function for quality checks on a variable, which includes missing values, empty entries, outliers, possible miscodings of numeric values as strings, and a matching visualization. It also includes functions for data cleaning, such as fixing factor level names.
 
--  `r pkg("clickR")`
+-  `r pkg("mStats")` provides a dataset overview and descriptive statistics for each variable. Duplicates in the dataset can be identified. For plots, the package includes a function for histograms and for pairwise variable plots. 
 
--  `r pkg("mStats")`
+-  `r pkg("skimr")` provides, using a single command call, a dataset overview and descriptive statistics for each variable grouped by data type. There are various options for customization.
 
--  `r pkg("skimr")` 
+-  `r pkg("StatMeasures")` provides a dataset overview and functions for data description depending on the data type. Duplicate observations and duplicated keys can be identified.  
 
--  `r pkg("StatMeasures")` 
+-  `r pkg("xray")` gives a dataset overview with focus on missing values, empty entries and specific values (0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
 
--  `r pkg("xray")` 
+-  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values (0, Inf), cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
 
-#### Focus on visualization
+#### Dataset visualization
 
--  `r pkg("visdat")` follows a unique approach by providing mainly graphical output. While the package `r pkg("inspectdf")` also equips each of its functions with a matching plot, it differs from `r pkg("visdat")` in providing the output in a tabular format. Both packages are able to compare two data sets, but `r pkg("inspectdf")` offers more functionalities in this regard.
-  
+-  `r pkg("visdat", priority = "core")` visualizes entire datasets highlighting missing values, (estimated or actual) data types, (dis-)agreements with global conditions, correlations, and differences between datasets of the same dimension. 
+
+-  `r pkg("inspectdf", priority = "core")` equips each of its functions with a matching plot, but also provides the output in a tabular format. The package considers categorical and numerical variables, data types, missing values, correlations and memory usage. Each function can be applied to compare two datasets.
+
+#### Additional statistical support
+
+-  `r pkg("DescTools")` is a large collection of functions for data description, data exploration and statistical analyses.
+
