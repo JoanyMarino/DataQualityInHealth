@@ -21,7 +21,7 @@ four domains of the reference framework. Packages that do not run as expected or
 # Packages 
 
 Please see https://github.com/JoanyMarino/DataQualityInHealth for the list of packages and preview of the Task View. 
-Currently, it consists of 27 packages (including Y core packages).  
+Currently, it consists of 27 packages (including 9 core packages).  
   
 # Overlap 
 
