@@ -27,11 +27,11 @@ four domains of the reference framework. Packages that do not run as expected or
 
 ## Descriptive-explorative features together with targeted checks
      
-We include here R packages that perform targeted data quality checks, but also provide descriptive or explorative features. These packages also generate data quality assessment reports that allow for rating data quality issues.  
+These packages perform targeted data quality checks, but also provide descriptive or explorative features. These packages also generate data quality assessment reports that allow for rating data quality issues.  
 
--   `r pkg("pointblank", priority = "core")` is a general-purpose package for data quality assessments. Data quality checks are included via specific validation functions that the user can compile into an "agent". This enables to create customized reports for data quality. The package also provides a pre-set report, which includes a data overview and some figures (e.g., pairwise plots of variables, correlation heat map, and a visualization of missing values). 
+-   `r pkg("pointblank", priority = "core")` is a general-purpose package for data quality assessments. Data quality checks are included via specific validation functions that the user can compile into an "agent". This enables to create customized reports for data quality. The package also provides a pre-defined report, which includes a data overview and some figures (e.g., pairwise plots of variables, correlation heat map, and a visualization of missing values). 
 
--   `r pkg("dataReporter", priority = "core")` provides a pre-set report including a data overview, some checks (e.g., for potential data type mismatches, miscoded missing values or outliers), and a summary for each variable. This package is the successor of `r pkg("dataMaid")`. 
+-   `r pkg("dataReporter", priority = "core")` provides a pre-defined report including a data overview, some checks (e.g., for potential data type mismatches, miscoded missing values or outliers), and a summary for each variable. This package is the successor of `r pkg("dataMaid")`. 
 
 -   `r pkg("dataquieR", priority = "core")` is designed to conduct data quality assessments in data collections for epidemiological research. 
      It makes strong use of metadata (e.g., collected in a spreadsheet) and checks the formal compliance of study data with expectations defined in the metadata. The concept of the package follows the data quality framework of [Schmidt et al. (2020)](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01252-7). 
@@ -39,9 +39,11 @@ We include here R packages that perform targeted data quality checks, but also p
   
 -   `r pkg("DQAstats", priority = "core")` provides a data quality assessment for electronic health records. It integrates metadata and allows to compare two datasets by design. The data quality framework for which this package was developed is described in [Kapsner et al. (2019)](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). The add-on package `r pkg("DQAgui")` enriches this package with a GUI.
 
--   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines by [Nonnemacher et al. (2014)](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
+-   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines of [Nonnemacher et al. (2014)](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
 
 ## Descriptive overviews and data exploration
+
+These packages focus on data exploration and yield descriptive summaries and overviews of the data.
 
 ### Packages including reporting features
 
@@ -57,19 +59,19 @@ We include here R packages that perform targeted data quality checks, but also p
 
 -  `r pkg("ExPanDaR")` provides a Shiny application for data exploration and analysis, from which R Notebook code can be exported for documentation and reproduction. The application includes various univariate and bivariate plots, descriptive statistics, correlation analysis and regression analyses. 
 
-- `r pkg("explore")` provides a Shiny application for data exploration (including a dataset overview, descriptive statistics, univariate and bivariate plots and decision trees) and can generate descriptive reports for the complete dataset or single variables. 
+- `r pkg("explore")` also offers a Shiny application for data exploration (including a dataset overview, descriptive statistics, univariate and bivariate plots and decision trees) and can generate descriptive reports for the complete dataset or single variables. 
 
 ### Descriptive overview without stand-alone reports
 
--  `r pkg("clickR")` provides descriptive statistics for each variable, grouped by data type. The package provides a function for quality checks on a variable, which includes missing values, empty entries, outliers, possible miscodings of numeric values as strings, and a matching visualization. It also includes functions for data cleaning, such as fixing factor level names.
+-  `r pkg("clickR")` supplies descriptive statistics for each variable, grouped by data type. The package provides a function for quality checks on a variable, which includes missing values, empty entries, outliers, possible miscodings of numeric values as strings, and a matching visualization. It also includes functions for data cleaning, such as fixing factor level names.
 
--  `r pkg("mStats")` provides a dataset overview and descriptive statistics for each variable. Duplicates in the dataset can be identified. For plots, the package includes a function for histograms and for pairwise variable plots. 
+-  `r pkg("mStats")` generates a dataset overview and descriptive statistics for each variable, also identifying duplicates in the dataset. For plots, the package includes a function for histograms and for pairwise variable plots. 
 
--  `r pkg("skimr")` provides, using a single command call, a dataset overview and descriptive statistics for each variable grouped by data type. There are various options for customization.
+-  `r pkg("skimr")` provides a function that produces a dataset overview and descriptive statistics for each variable grouped by data type. There are various options for customization.
 
--  `r pkg("StatMeasures")` provides a dataset overview and functions for data description depending on the data type. Duplicate observations and duplicated keys can be identified.  
+-  `r pkg("StatMeasures")` outputs a dataset overview and has functions to describe the data depending on its type. Duplicate observations and duplicated keys can be identified.  
 
--  `r pkg("xray")` gives a dataset overview with focus on missing values, empty entries and specific values (0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
+-  `r pkg("xray")` gives a dataset overview with a focus on missing values, empty entries and specific values (0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
 
 -  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values (0, Inf), cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
 
@@ -90,31 +92,34 @@ unit-testing-functions as in `r pkg(testthat)`.
 
 ### Packages that allow integration in test-frameworks
 
-These packages run a set of tests and summarise their results:
+These packages run a set of tests and summarise their results.
 
--   `r pkg("validate", priority = "core")` can also be used for traceable data curation with the add-on packages `r pkg("errorlocate")` and `r pkg("lumberjack")`. It also comprises notification management functions. It supports a simplified R-alike syntax as well as [SDMX](https://sdmx.org/) REST-web service URLs for importing data quality rules.
+-   `r pkg("validate", priority = "core")` can also be used for traceable data curation with the add-on packages `r pkg("errorlocate")` and `r pkg("lumberjack")`. It also comprises notification management functions. It supports a simplified R-like syntax as well as [SDMX](https://sdmx.org/) REST-web service URLs for importing data quality rules.
 
 -   `r pkg("testdat", priority = "core")` integrates well with `r pkg(testthat)`, because it comprises functions that can be used in a unit test to test data for integrity, completeness and consistency issues.
 
 -   `r pkg("assertr")` supports a pipeline-alike coding style for writing tests. It addresses mostly integrity and consistency issues.
 
--   `r pkg("assertive")`: provides a large number of check functions, among them checks for specific string patterns (email addresses, ISBN
+-   `r pkg("assertive")` provides a large number of test functions, among them checks for specific string patterns (email addresses, ISBN
                           codes, US zip codes, etc.).
 
--   `r pkg("assertable")` Simple, flexible, assertions on data.frame or data.table objects. It addresses mostly the data integrity.
+-   `r pkg("assertable")` evaluates simple and flexible assertions on data.frame or data.table objects. It addresses mostly data integrity.
 
 ### Packages that check and report rule violations
 
--   `r pkg("IPDFileCheck")` checks for availability of data and validates individual data values based on variable specific rules, e.g., if any value for a variable is in a list of admissible categories.
+-   `r pkg("IPDFileCheck")` checks for availability of data and validates individual data values based on variable specific rules, for example, if any value for a variable is in a list of admissible categories.
 
 -   `r pkg("sanityTracker")` checks a rule set and reports the samples for that a rule fails. Can generate a summary data frame on failed checks.
 
+
 # Links
+
 - [Data Quality Assessment](https://dataquality.ship-med.uni-greifswald.de/dqassess.html)
 - [Medical Informatics Initiative](https://www.medizininformatik-initiative.de/index.php/de)
 - [MIRACUM (Medical Informatics in Research and Care in University Medicine)](https://www.miracum.org/en/)
 
 # References 
+
 - Mariño J, Kasbohm E, Struckmann S, Kapsner LA, Schmidt CO. [R Packages for Data Quality Assessments and Data Monitoring: A Software Scoping Review with Recommendations for Future Developments](https://www.mdpi.com/2076-3417/12/9/4238). Applied Sciences. 2022 Jan;12(9):4238.
 - Kapsner LA, Mang JM, Mate S, Seuchter SA, Vengadeswaran A, Bathelt F, Deppenwiese N, Kadioglu D, Kraska D, Prokosch HU. [Linking a Consortium-Wide Data Quality Assessment Tool with the MIRACUM Metadata Repository](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). Applied Clinical Informatics. 2021 Aug;12(04):826-35.
 - Schmidt CO, Struckmann S, Enzenbach C, Reineke A, Stausberg J, Damerow S, Huebner M, Schmidt B, Sauerbrei W, Richter A. [Facilitating harmonized data quality assessments. A data quality framework for observational health research data collections with software implementations in R](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01252-7). BMC Medical Research Methodology. 2021 Dec;21(1):1-5.
