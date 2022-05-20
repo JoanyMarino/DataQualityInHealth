@@ -20,14 +20,6 @@
   as well in the proposal.
 
    
-All sections of the proposal have been divided into separate files (Proposal_*.md) to facilitate simultaneous collaboration. 
-
-**To do** (once we are ready to submit): 
-
-- [ ] Merge the three Proposal_*Packages.md into the README.md.
-- [ ] Create an issue with Proposal_*.md sections 1, 2, and 4.
-- [ ] Remove old files / move to another repository.
-
 ## Useful links
 
 * [CTV](https://cran.r-project.org/web/views/)
