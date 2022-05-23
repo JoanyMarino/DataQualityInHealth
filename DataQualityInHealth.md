@@ -1,16 +1,16 @@
 ---
 name: DataQualityInHealth
-maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, Lorenz Kapsner
+maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, Lorenz A. Kapsner
 email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, Lorenz.Kapsner@uk-erlangen.de
 version: 2022-05-18
 ---
 
-*DataQualityInHealth* contains packages that help assess the quality of observational health research data. 
+*DataQualityInHealth* contains packages that help to assess the quality of observational health research data. 
 
-Data quality informs about the degree to which data fulfils defined requirements. Evaluating data quality is essential in initial data analysis and monitoring processes,
-ensuring valid research results and consistent assessments in long-term studies. Assessing data quality is an issue across many scientific fields, including various data 
+Data quality informs about the degree to which data fulfils defined requirements. Evaluating data quality is essential in initial data analysis and monitoring processes in order to
+ensure valid research results and consistent assessments in long-term studies. Assessing data quality is an issue across many scientific fields, including various data 
 types and metadata formats. Base R already contains general functionality to evaluate data quality broadly, but the structure of the data and metadata will determine the 
-applicability of more specialized packages. Hence, data quality analysis may be spread across packages depending on the application. 
+applicability of more specialized packages. Hence, data quality analysis may utilize several different R packages depending on the application. 
 This task view documents packages for data quality assessment specifically for health-related data from a methodological perspective. The quality checks
 performed by these packages include inspecting the data's integrity, completeness, consistency, and accuracy. 
 
@@ -20,7 +20,7 @@ However, many have functionalities that span more than one category. We include 
 applicable to health data in various formats, and provide a sufficient number of data quality checks. For the latter, we compared packages in reference to a data quality 
 framework for observational health research data 
 ([Schmidt et al. 2021](https://doi.org/10.1186/s12874-021-01252-7)). As a threshold for inclusion, the packages need to address at least three data quality dimensions and
-four domains of the reference framework. Packages that do not run as expected or produce major errors when applied to evaluate 
+four domains of the reference framework. Packages that do not run as expected or produce major errors when applied to evaluate a 
 [publicly available data sets](https://dataquality.ship-med.uni-greifswald.de/ExampleDataDescription.html) are not included.
 
 # Packages 
@@ -29,7 +29,7 @@ four domains of the reference framework. Packages that do not run as expected or
      
 These packages perform targeted data quality checks, but also provide descriptive or explorative features. These packages also generate data quality assessment reports that allow for rating data quality issues.  
 
--   `r pkg("pointblank", priority = "core")` is a general-purpose package for data quality assessments. Data quality checks are included via specific validation functions that the user can compile into an "agent". This enables to create customized reports for data quality. The package also provides a pre-defined report, which includes a data overview and some figures (e.g., pairwise plots of variables, correlation heat map, and a visualization of missing values). 
+-   `r pkg("pointblank", priority = "core")` is a general-purpose package for data quality assessments. Data quality checks are included via specific validation functions that the user can compile into an "agent". This enables to create customized reports for data quality. The package also provides a pre-defined report, which includes a data overview and some figures (e.g., pairwise plots of variables, correlation heat maps, and a visualization of missing values). 
 
 -   `r pkg("dataReporter", priority = "core")` provides a pre-defined report including a data overview, some checks (e.g., for potential data type mismatches, miscoded missing values or outliers), and a summary for each variable. This package is the successor of `r pkg("dataMaid")`. 
 
@@ -37,7 +37,7 @@ These packages perform targeted data quality checks, but also provide descriptiv
      It makes strong use of metadata (e.g., collected in a spreadsheet) and checks the formal compliance of study data with expectations defined in the metadata. The concept of the package follows the data quality framework of [Schmidt et al. (2020)](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01252-7). 
      For technical details see [Richter et al. (2021)](https://doi.org/10.21105/joss.03093).
   
--   `r pkg("DQAstats", priority = "core")` provides a data quality assessment for electronic health records. It integrates metadata and allows to compare two datasets by design. The data quality framework for which this package was developed is described in [Kapsner et al. (2019)](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). The add-on package `r pkg("DQAgui")` enriches this package with a GUI.
+-   `r pkg("DQAstats", priority = "core")` provides a data quality assessment for electronic health records. It integrates metadata and allows to compare two datasets by design. The package is aligned to the data quality framework described by [Kahn et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/). Details on the implementation an connection with the metadata repository are described in [Kapsner et al. (2021)](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). The add-on package `r pkg("DQAgui")` enriches this package with a graphical user interface (GUI) based on [R shiny](https://cran.r-project.org/package=shiny).
 
 -   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines of [Nonnemacher et al. (2014)](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
 
@@ -57,7 +57,7 @@ These packages focus on data exploration and yield descriptive summaries and ove
 
 ### GUI-based 
 
--  `r pkg("ExPanDaR")` provides a Shiny application for data exploration and analysis, from which R Notebook code can be exported for documentation and reproduction. The application includes various univariate and bivariate plots, descriptive statistics, correlation analysis and regression analyses. 
+-  `r pkg("ExPanDaR")` provides a Shiny application for data exploration and analysis, from which R Notebook code can be exported for documentation and reproducibility. The application includes various univariate and bivariate plots, descriptive statistics, correlation analysis and regression analyses. 
 
 - `r pkg("explore")` also offers a Shiny application for data exploration (including a dataset overview, descriptive statistics, univariate and bivariate plots and decision trees) and can generate descriptive reports for the complete dataset or single variables. 
 
@@ -69,11 +69,11 @@ These packages focus on data exploration and yield descriptive summaries and ove
 
 -  `r pkg("skimr")` provides a function that produces a dataset overview and descriptive statistics for each variable grouped by data type. There are various options for customization.
 
--  `r pkg("StatMeasures")` outputs a dataset overview and has functions to describe the data depending on its type. Duplicate observations and duplicated keys can be identified.  
+-  `r pkg("StatMeasures")` outputs a dataset overview and has functions to describe the data elements depending on their type. Duplicate observations and duplicated keys can be identified.  
 
 -  `r pkg("xray")` gives a dataset overview with a focus on missing values, empty entries and specific values (0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
 
--  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values (0, Inf), cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
+-  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values [0, Inf], cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
 
 ### Dataset visualization
 
@@ -109,7 +109,7 @@ These packages run a set of tests and summarise their results.
 
 -   `r pkg("IPDFileCheck")` checks for availability of data and validates individual data values based on variable specific rules, for example, if any value for a variable is in a list of admissible categories.
 
--   `r pkg("sanityTracker")` checks a rule set and reports the samples for that a rule fails. Can generate a summary data frame on failed checks.
+-   `r pkg("sanityTracker")` checks a rule set and reports the samples for that a rule fails. It can generate a summary data frame to report failed checks.
 
 
 # Links
