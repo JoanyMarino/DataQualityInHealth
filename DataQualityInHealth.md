@@ -5,7 +5,7 @@ email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.
 version: 2022-05-18
 ---
 
-*DataQualityInHealth* contains packages that help to assess the quality of observational health research data. 
+*DataQualityInHealth* contains packages that help to assess the quality of data in health research studies. 
 
 Data quality informs about the degree to which data fulfils defined requirements. Evaluating data quality is essential in initial data analysis and monitoring processes in order to
 ensure valid research results and consistent assessments in long-term studies. Assessing data quality is an issue across many scientific fields, including various data 
