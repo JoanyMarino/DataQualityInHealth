@@ -7,18 +7,12 @@ version: 2022-05-18
 
 *DataQualityInHealth* contains packages that help assess data quality, focusing on phenotypic data from health and social science studies.
 
-Data quality is the degree to which data fulfills defined requirements, and it is an issue in all scientific fields. Evaluating data quality is essential in initial data analysis and quality monitoring processes to ensure valid research results. Base R already contains general functionalities for assessing data quality in a broad sense, and depending on the application, users may employ several packages. Yet, users will commonly need extensive programming to create comprehensive reports, with code being typically highly tailored to a specific data set. Therefore, it is important to identify packages with particular functionalities to facilitate conducting data quality analyses. Using these packages may also improve the comparable reporting on data quality across studies. However, the applicability of any such package, together with suitable data quality approaches, will differ across science fields as determined by the data structures, its requirements, and the representation of the latter in the metadata. 
+Data quality is the degree to which data fulfills defined requirements, and it is an issue in all scientific fields. Evaluating data quality is essential in initial data analysis and quality monitoring processes to ensure valid research results. Base R already contains general functionalities for assessing data quality in a broad sense, and depending on the application, users may employ several packages. Yet, users will commonly need extensive programming to create comprehensive reports, with code being typically highly tailored to a specific data set. Therefore, it is important to identify packages with particular functionalities to facilitate conducting data quality analyses. Using these packages may also improve the comparable reporting on data quality across studies. However, the applicability of any such package, together with suitable data quality approaches, will differ across research fields as determined by the data structures, its requirements, and the representation of the latter in the metadata. 
 This task view documents packages for data quality assessment, specifically for phenotypic data with a focus on health and social science studies. Prototypical data examples are results from clinical measurements (e.g., blood pressure) or responses to surveys and questionnaires. Nevertheless, this focus does not preclude the suitability of the documented packages for use in other research fields.
 
 The quality checks performed by the targeted packages include inspecting a range of data quality dimensions, such as integrity (the degree to which the data conforms to structural and technical requirements), completeness (the degree to which expected data values are present), consistency (the degree to which data values are free of breaks in conventions or contradictions), and accuracy (the degree of agreement between observed and expected distributions and associations). 
-The packages are broadly divided according to their capabilities into three major groups: packages that explicitly focus on data quality assessments (these usually 
-combine targeted data quality checks with descriptive or explorative features), packages that target data exploration and statistical analyses but provide data quality-related functions, and packages that perform focused data quality checks based on rule input. 
-However, many have functionalities that span more than one category. We include packages, if they fall (at least) into one of the three categories mentioned above, are 
-applicable to health data in various formats, and provide a sufficient number of data quality checks. For the latter, we compared packages in reference to a data quality 
-framework for observational health research data 
-([Schmidt et al. 2021](https://doi.org/10.1186/s12874-021-01252-7)). As a threshold for inclusion, the packages need to address at least three data quality dimensions and
-four domains of the reference framework. Packages that do not run as expected or produce major errors when applied to evaluate a 
-[publicly available data sets](https://dataquality.ship-med.uni-greifswald.de/ExampleDataDescription.html) are not included.
+The packages are broadly divided according to their capabilities into three major groups: packages that explicitly focus on data quality assessments (these usually combine targeted data quality checks with descriptive or explorative features), packages that target data exploration and statistical analyses but provide data quality-related functions, and packages that perform focused data quality checks based on rule input. 
+However, many have functionalities that span more than one category. We include packages, if they fall (at least) into one of the three categories mentioned above, are applicable to health data in various formats, and provide a sufficient number of data quality checks. For the latter, we compared packages in reference to a data quality framework for observational health research data ([Schmidt et al. 2021](https://doi.org/10.1186/s12874-021-01252-7)). As a threshold for inclusion, the packages need to address at least three data quality dimensions and four domains of the reference framework. Packages that do not run as expected or produce major errors when applied to evaluate a [publicly available data sets](https://dataquality.ship-med.uni-greifswald.de/ExampleDataDescription.html) are not included.
 
 # Packages 
 
@@ -34,7 +28,7 @@ These packages perform targeted data quality checks, but also provide descriptiv
      It makes strong use of metadata (e.g., collected in a spreadsheet) and checks the formal compliance of study data with expectations defined in the metadata. The concept of the package follows the data quality framework of [Schmidt et al. (2020)](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01252-7). 
      For technical details see [Richter et al. (2021)](https://doi.org/10.21105/joss.03093).
   
--   `r pkg("DQAstats", priority = "core")` provides a data quality assessment for electronic health records. It integrates metadata and allows to compare two datasets by design. The package is aligned to the data quality framework described by [Kahn et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/). Details on the implementation an connection with the metadata repository are described in [Kapsner et al. (2021)](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). The add-on package `r pkg("DQAgui")` enriches this package with a graphical user interface (GUI) based on [R shiny](https://cran.r-project.org/package=shiny).
+-   `r pkg("DQAstats", priority = "core")` provides a data quality assessment for electronic health records. It integrates metadata and allows to compare two datasets by design. The package is aligned to the data quality framework described by [Kahn et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/). Details on the implementation and connection with the metadata repository are described in [Kapsner et al. (2021)](https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0041-1733847). The add-on package `r pkg("DQAgui")` enriches this package with a graphical user interface (GUI) based on [R shiny](https://cran.r-project.org/package=shiny).
 
 -   `r pkg("MOQA")` focuses on single variables and provides separate functions and reports for numeric and categorical variables. The reports are created as separate PDF files for each variable, including an overview of the data elements and visualizations of their distribution. The package was motivated by the data quality guidelines of [Nonnemacher et al. (2014)](https://library.oapen.org/bitstream/handle/20.500.12657/39363/datenqualitat-in-der-medizinischen-forschung.pdf?sequence=1).
 
@@ -68,9 +62,9 @@ These packages focus on data exploration and yield descriptive summaries and ove
 
 -  `r pkg("StatMeasures")` outputs a dataset overview and has functions to describe the data elements depending on their type. Duplicate observations and duplicated keys can be identified.  
 
--  `r pkg("xray")` gives a dataset overview with a focus on missing values, empty entries and specific values (0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
+-  `r pkg("xray")` gives a dataset overview with a focus on missing values, empty entries and specific values (such as 0, Inf), which are considered 'anomalous'. The package includes histograms and bar charts to visualize distributions.
 
--  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values [0, Inf], cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
+-  `r pkg("funModeling")` provides a dataset overview, descriptive statistics and some data quality checks (missing values, specific values (such as 0, Inf), cardinality). The package also includes functions for data visualization, correlation analysis and data cleaning.
 
 ### Dataset visualization
 
@@ -84,8 +78,7 @@ These packages focus on data exploration and yield descriptive summaries and ove
 
 ## Rule-based input to perform highly focused checks
 
-These packages follow the idea of a rule-based checking, similar to software 
-unit-testing-functions as in `r pkg(testthat)`. 
+These packages follow the idea of a rule-based checking, similar to software unit-testing-functions as in `r pkg(testthat)`. 
 
 ### Packages that allow integration in test-frameworks
 
