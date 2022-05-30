@@ -1,19 +1,16 @@
 ---
 name: DataQualityInHealth
-maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, Lorenz A. Kapsner
-email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, Lorenz.Kapsner@uk-erlangen.de
+maintainers: Joany Mariño, Elisa Kasbohm, Stephan Struckmann, Lorenz A. Kapsner, Carsten O. Schmidt
+email: joany.marino@uni-greifswald.de, elisa.kasbohm@uni-greifswald.de, stephan.struckmann@uni-greifswald.de, Lorenz.Kapsner@uk-erlangen.de, carsten.schmidt@uni-greifswald.de
 version: 2022-05-18
 ---
 
-*DataQualityInHealth* contains packages that help to assess the quality of data in health research studies. 
+*DataQualityInHealth* contains packages that help assess data quality, focusing on phenotypic data from health and social science studies.
 
-Data quality informs about the degree to which data fulfils defined requirements. Evaluating data quality is essential in initial data analysis and monitoring processes in order to
-ensure valid research results and consistent assessments in long-term studies. Assessing data quality is an issue across many scientific fields, including various data 
-types and metadata formats. Base R already contains general functionality to evaluate data quality broadly, but the structure of the data and metadata will determine the 
-applicability of more specialized packages. Hence, data quality analysis may utilize several different R packages depending on the application. 
-This task view documents packages for data quality assessment specifically for health-related data from a methodological perspective. The quality checks
-performed by these packages include inspecting the data's integrity, completeness, consistency, and accuracy. 
+Data quality is the degree to which data fulfills defined requirements, and it is an issue in all scientific fields. Evaluating data quality is essential in initial data analysis and quality monitoring processes to ensure valid research results. Base R already contains general functionalities for assessing data quality in a broad sense, and depending on the application, users may employ several packages. Yet, users will commonly need extensive programming to create comprehensive reports, with code being typically highly tailored to a specific data set. Therefore, it is important to identify packages with particular functionalities to facilitate conducting data quality analyses. Using these packages may also improve the comparable reporting on data quality across studies. However, the applicability of any such package, together with suitable data quality approaches, will differ across science fields as determined by the data structures, its requirements, and the representation of the latter in the metadata. 
+This task view documents packages for data quality assessment, specifically for phenotypic data with a focus on health and social science studies. Prototypical data examples are results from clinical measurements (e.g., blood pressure) or responses to surveys and questionnaires. Nevertheless, this focus does not preclude the suitability of the documented packages for use in other research fields.
 
+The quality checks performed by the targeted packages include inspecting a range of data quality dimensions, such as integrity (the degree to which the data conforms to structural and technical requirements), completeness (the degree to which expected data values are present), consistency (the degree to which data values are free of breaks in conventions or contradictions), and accuracy (the degree of agreement between observed and expected distributions and associations). 
 The packages are broadly divided according to their capabilities into three major groups: packages that explicitly focus on data quality assessments (these usually 
 combine targeted data quality checks with descriptive or explorative features), packages that target data exploration and statistical analyses but provide data quality-related functions, and packages that perform focused data quality checks based on rule input. 
 However, many have functionalities that span more than one category. We include packages, if they fall (at least) into one of the three categories mentioned above, are 
